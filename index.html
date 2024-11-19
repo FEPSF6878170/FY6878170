@@ -21,7 +21,7 @@
 
               td, th {
                 border: 1px solid #dddddd;
-                text-aligh: left;
+                text-align: left;
                 padding: 8px;
               }
 
@@ -240,7 +240,7 @@
       if(commits && commits.length > 0) {
         const lastCommitDate = new Date(commits[0].commit.date);
 
-        document.getElementById('last-updated').innerText = 'Last Modified Time: ${lastCommitDate.toLocaleString()}';
+        document.getElementById('last-updated').innerText = 'Last Modified Time: ${lastCommitDate()}';
       } else {
         document.getElementById('last-updated').innerText = 'No commits found in the repository.';
       }
