@@ -238,9 +238,9 @@
 
       const commits = await response.json();
       if(commits && commits.length > 0) {
-        const lastCommitDate = new Date(commits[0].commit.date);
+        const lastCommitDate = new Date(commits[0].commit.committer.date);
 
-        document.getElementById('last-updated').innerText = 'Last Modified Time: ${lastCommitDate()}';
+        document.getElementById('last-updated').innerText = 'Last Modified Time: ${lastCommitDate.toLocaleString()}';
       } else {
         document.getElementById('last-updated').innerText = 'No commits found in the repository.';
       }
@@ -258,7 +258,5 @@
 
   window.onload = getLastUpdatedTime;
 </script>
-curl https://api.github.com/repos/<your_name>/<your_repo>/commits/master 2>&1 | \
-grep '"date"' | tail -n 1
           </body>
 </html>
