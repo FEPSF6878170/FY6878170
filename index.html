@@ -223,7 +223,7 @@
     const username = 'FEPSF6878170';
     const repo = 'FY6878170';
 
-    const url = 'https://github.com/FEPSF6878170/FY6878170/commit/364b96ae2a642e795bd62ba296c2760383fca766';
+    const url = 'https://api.github.com/repos/FEPSF6878170/FY6878170/commits';
 
     try{
       const response = await fetch(url, {
@@ -238,9 +238,9 @@
 
       const commits = await response.json();
       if(commits && commits.length > 0) {
-        const lastCommitDate = new Date(commits[0].commit.committer.date);
+        const lastCommitDate = new Date(parents[0].commits.committer.date);
 
-        document.getElementById('last-updated').innerText = 'Last Modified Time: ${lastCommitDate}';
+        document.getElementById('last-updated').innerText = 'Last Modified Time: ${lastCommitDate.toLocaleString()}';
       } else {
         document.getElementById('last-updated').innerText = 'No commits found in the repository.';
       }
