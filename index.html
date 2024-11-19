@@ -238,7 +238,7 @@
 
       const commits = await response.json();
       if(commits && commits.length > 0) {
-        const lastCommitDate = new Date(parents[0].commit.committer.date);
+        const lastCommitDate = new Date(commits[0].commit.date);
 
         document.getElementById('last-updated').innerText = 'Last Modified Time: ${lastCommitDate.toLocaleString()}';
       } else {
