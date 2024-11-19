@@ -258,5 +258,7 @@
 
   window.onload = getLastUpdatedTime;
 </script>
+         git pull; 
+git log -1 --format="%at" | xargs -I{} date -d @{} +%Y/%m/%d_%H:%M:%S
           </body>
 </html>
