@@ -258,7 +258,7 @@
 
   window.onload = getLastUpdatedTime;
 </script>
-         git pull; 
-git log -1 --format="%at" | xargs -I{} date -d @{} +%Y/%m/%d_%H:%M:%S
+curl https://api.github.com/repos/<your_name>/<your_repo>/commits/master 2>&1 | \
+grep '"date"' | tail -n 1
           </body>
 </html>
