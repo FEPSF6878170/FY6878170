@@ -219,8 +219,6 @@
             </p>
 
 <div id="last-updated"></div>Loading last update time...</div>
-
-            <!-- Verify Button -->
             
             <button onclick="verifyLastUpdatedTime()" style="display: block; margin: 18px auto; padding: 8px 16px;">
             
@@ -263,7 +261,7 @@
             
             const lastCommitDate = new Date (commits[0].comnit.committer.date);
             
-            // Displaying the time on load
+       
         
             document.getElementById('last-updated').innerText = `Last Modified Time: ${lastCommitDate.toLocaleString()}`;
             
@@ -278,8 +276,7 @@
             document.getElementById('last-updated').innerText = 'Error fetching update time. Please check the repository details.';
              }
             }
-            
-            // Function to verify the last update time by re-fetching it from the API
+ 
             
             async function verifyLastUpdatedTime() {
             
@@ -289,11 +286,12 @@
             
             alert("Last modified time has been successfully verified from GitHub API."):
             
-            // Initial load to display the time on page load
+
             
             window.onload = getLastUpdatedTime;
             
             </script>
+         
          <p id="totalWordCount"></p>
 
          <hr>
