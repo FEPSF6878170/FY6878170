@@ -264,11 +264,11 @@
          <hr>
 
          <script>
-           function displayWorkCount(sectionId, outputId) {
+           function displayWordCount(sectionId, outputId) {
 
              const text = document.getElementById(sectionId).textContent;
 
-             const wordArray = tet.trim().split(/\s+/);
+             const wordArray = text.trim().split(/\s+/);
 
              const wordCount = wordArray.length;
 
