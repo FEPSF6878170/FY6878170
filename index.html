@@ -295,43 +295,6 @@
             
             </script>
 
-<p id="totalwordcount"></p>
 
-<hr>
-
-<script>
-
-
-function displayWordCount(sectionId, outputId) {
-
-const text = document.getElementById(sectionid).textContent;
-
-const wordArray = text.trim().split(/\s+/);
-
-const wordCount = wordArray.length;
-
-return wordCount;
-
-}
-
-function displayTotalWordCount() {
-
-             const AbstractCount = displayWordCount("Abstract");
-             const IntroductionCount = displayWordCount("Introduction");
-             const PrimordialBlackHolesCount = displayWordCount("Primordial_Black_Holes");
-             const GravitationalMicrolensingCount = displayWordCount("Gravitational_Microlensing");
-             const ArgumentsagainstPrimordialBlackHolesCount = displayWordCount("Arguments_against_Primordial_Black_Holes");
-             const ConclusionCount = displayWordCount("Conclusion");
-
-             const totalWordCount = AbstractCount + IntroductionCount + PrimordialBlackHolesCount + GravitationalMicrolensingCount + ArgumentsagainstPrimordialBlackHolesCount + ConclusionCount;
-
- 
-
-document.getElementById("totalWordCount").innerText = `Total word count: ${totalWordCount}`;
-}
-
-window.onload = displayTotalwordCount;
-
-</script>
           </body>
 </html>
