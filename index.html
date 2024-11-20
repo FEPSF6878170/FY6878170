@@ -229,7 +229,7 @@
     const username = 'FEPSF6878170';
     const repo = 'FY6878170';
 
-    const url = 'https://api.github.com/repos/FEPSF6878170/FY6878170/commits';
+    const url = `https://api.github.com/repos/FEPSF6878170/FY6878170/commits`;
 
     try{
       const response = await fetch(url, {
@@ -239,14 +239,14 @@
         }
       });
       if(!response.ok) {
-        throw new Error('Error fetching data: ${response.status} - ${response.statusText}');
+        throw new Error(`Error fetching data: ${response.status} - ${response.statusText}`);
       }
 
       const commits = await response.json();
       if(commits && commits.length > 0) {
         const lastCommitDate = new Date(commits[0].commit.committer.date);
 
-        document.getElementById('last-updated').innerText = 'Last Modified Time: ${lastCommitDate.toLocaleString()}';
+        document.getElementById('last-updated').innerText = `Last Modified Time: ${lastCommitDate.toLocaleString()}`;
       } else {
         document.getElementById('last-updated').innerText = 'No commits found in the repository.';
       }
@@ -291,7 +291,7 @@
 
              const totalWordCount = AbstractCount + IntroductionCount + PrimordialBlackHolesCount + GravitationalMicrolensingCount + ArgumentsagainstPrimordialBlackHolesCount + ConclusionCount;
 
-             document.getElementById('totalWordCount').innerText = 'Total word count: ${totalWordCount}';
+             document.getElementById('totalWordCount').innerText = `Total word count: ${totalWordCount}`;
            }
 
            window.onload = displayTotalWordCount;
