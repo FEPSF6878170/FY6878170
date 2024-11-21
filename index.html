@@ -81,7 +81,7 @@
 
        
         <h3 id="Abstract">Abstract</h3>
-        <pre id="Abstract"></pre>
+        <pre id="Abstract_InText"></pre>
       
       <p class="ex1">
       <pre>
@@ -98,7 +98,7 @@
       </p>
 <hr>
          <h3 id="Introduction">Introduction</h3>
-        <pre id="Introduction"></pre>
+        <pre id="Introduction_InText"></pre>
           <p class="ex1">
       <pre> 
         Dark matter is theorised to make up 27% of our universe (CERN - author unknown) and yet no experiment has discovered
@@ -113,7 +113,7 @@
         </p>
                 <hr>
          <h3 id="Primordial Black Holes">Primordial Black Holes</h3>
-            <pre id="Primordial_Black_Holes"></pre>
+            <pre id="Primordial_Black_Holes_InText"></pre>
           <p class="ex1">
        <pre> 
         Primordial black holes are simply black holes that formed microseconds after the big bang. They are theorised to be incredibly small,
@@ -132,7 +132,7 @@
  </p>
           <hr>
            <h3 id="Gravitational Microlensing">Gravitational Microlensing</h3>
-         <pre id="Grvaitational_Microlensing"></pre>
+         <pre id="Grvaitational_Microlensing_InText"></pre>
           <p class="ex1">
         <pre>
         Another source of evidence in favour of dark matter being made up of primordial black holes is the existence of gravitational microlensing.
@@ -149,7 +149,7 @@
       </p>
         <hr>
 <h3 id="Arguments against Primordial Black Holes">Arguments against Primordial Black Holes</h3>
-            <pre id="Arguments_against_Primordial_Black_Holes"></pre>
+            <pre id="Arguments_against_Primordial_Black_Holes_InText"></pre>
          <p class="ex1">
        <pre>
        There are several arguments against dark matter being comprised of primordial black holes and there are numerous other suggestions as to what dark 
@@ -168,7 +168,7 @@
        </p>
          <hr>
 <h3 id="Conclusion">Conclusion</h3>
-           <pre id="Conclusion"></pre>
+           <pre id="Conclusion_InText"></pre>
          <p class="ex1">
     <pre>
       This paper explored the theory that dark matter could potentially be comprised of primordial black holes. After reading through numerous papers for and 
@@ -284,12 +284,12 @@
   // Function to calculate and display total word count from selected sections
   function displayTotalWordCount() {
     // Calculate word count for each section and accumulate the total
-    const AbstractCount = displayWordCount("Abstract");
-    const IntroductionCount = displayWordCount("Introduction");
-    const PrimordialBlackHolesCount = displayWordCount("Primordial_Black_Holes");
-    const GravitationalMicrolensingCount = displayWordCount("Gravitational_Microlensing");
-    const ArgumentsagainstPrimordialBlackHolesCount = displayWordCount("Arguments_against_Primordial_Black_Holes");
-    const ConclusionCount = displayWordCount("Conclusion");
+    const AbstractCount = displayWordCount("Abstract_InText");
+    const IntroductionCount = displayWordCount("Introduction_InText");
+    const PrimordialBlackHolesCount = displayWordCount("Primordial_Black_Holes_InText");
+    const GravitationalMicrolensingCount = displayWordCount("Gravitational_Microlensing_InText");
+    const ArgumentsagainstPrimordialBlackHolesCount = displayWordCount("Arguments_against_Primordial_Black_Holes_InText");
+    const ConclusionCount = displayWordCount("Conclusion_InText");
     // Calculate the sum of all selected sections
     const totalWordCount = AbstractCount + IntroductionCount + PrimordialBlackHolesCount + GravitationalMicrolensingCount + ArgumentsagainstPrimordialBlackHolesCount + ConclusionCount;
     // Display the total word count
