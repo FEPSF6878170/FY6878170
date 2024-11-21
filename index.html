@@ -284,10 +284,14 @@
   // Function to calculate and display total word count from selected sections
   function displayTotalWordCount() {
     // Calculate word count for each section and accumulate the total
-    const IntroductionCount = displayWordCount("Introduction_InText");
-    const AnalysisCount = displayWordCount("Analysis_InText");
+    const AbstractCount = displayWordCount("Abstract");
+    const IntroductionCount = displayWordCount("Introduction");
+    const PrimordialBlackHolesCount = displayWordCount("Primordial_Black_Holes");
+    const GravitationalMicrolensingCount = displayWordCount("Gravitational_Microlensing");
+    const ArgumentsagainstPrimordialBlackHolesCount = displayWordCount("Arguments_against_Primordial_Black_Holes");
+    const ConclusionCount = displayWordCount("Conclusion");
     // Calculate the sum of all selected sections
-    const totalWordCount = IntroductionCount + AnalysisCount;
+    const totalWordCount = AbstractCount + IntroductionCount + PrimordialBlackHolesCount + GravitationalMicrolensingCount + ArgumentsagainstPrimordialBlackHolesCount + ConclusionCount;
     // Display the total word count
     document.getElementById("totalWordCount").innerText = `Total word count: ${totalWordCount}`;
   }
