@@ -81,10 +81,10 @@
 
        
         <h3 id="Abstract">Abstract</h3>
-        <pre id="Abstract_InText"></pre>
+        <p id="Abstract_InText">
       
-      <p class="ex1">
-      <pre>
+      
+      
         For decades researchers have been debating numerous theories as to what dark matter could be made up of. Dark matter makes up about
         27% of our universe, yet the only thing we know about dark matter is that it has a gravitational effect on normal matter. 
         
@@ -94,13 +94,13 @@
         This theory does not go unchallenged however, there are arguments against primordial black holes making up dark matter and, in this paper,
         I intend to take a closer look at the arguments for and against primordial black holes as dark matter and propose my own conclusion as to
         whether I believe that primordial black holes are a valid contender as a dark matter candidate.
-      </pre>
       </p>
+      
 <hr>
          <h3 id="Introduction">Introduction</h3>
-        <pre id="Introduction_InText"></pre>
-          <p class="ex1">
-      <pre> 
+        <p id="Introduction_InText">
+          
+      
         Dark matter is theorised to make up 27% of our universe (CERN - author unknown) and yet no experiment has discovered
         any nongravitational evidence for it. The best evidence we have for the existence of dark matter is the rotation of galaxies.
         According to Newtonian physics the outer edges of a galaxy should spin faster than the centre, but this is not the case. We
@@ -109,13 +109,13 @@
         effects gravitationally which makes figuring out what it is incredibly difficult. The difficulty of detecting anything related
         to dark matter has allowed physicists to come up with a wide range of theories as to what makes up dark matter. One such theory
         is the idea that primordial black holes could be the source of dark matter and it is this theory that I wish to explore further.
-              </pre>
+              
         </p>
                 <hr>
          <h3 id="Primordial Black Holes">Primordial Black Holes</h3>
-            <pre id="Primordial_Black_Holes_InText"></pre>
-          <p class="ex1">
-       <pre> 
+            <p id="Primordial_Black_Holes_InText">
+         
+      
         Primordial black holes are simply black holes that formed microseconds after the big bang. They are theorised to be incredibly small,
         with some potentially being as little as 0.01 Solar masses (Barsanti et al 2022), and with such little mass there could be an unimaginably
         large number of these black holes formed at the  inception of the universe. Despite their small size most of these black holes would
@@ -132,9 +132,9 @@
  </p>
           <hr>
            <h3 id="Gravitational Microlensing">Gravitational Microlensing</h3>
-         <pre id="Grvaitational_Microlensing_InText"></pre>
-          <p class="ex1">
-        <pre>
+         <p id="Gravitational_Microlensing_InText">
+         
+        
         Another source of evidence in favour of dark matter being made up of primordial black holes is the existence of gravitational microlensing.
         When light interacts with an objects gravitational field it will curve slightly. This effect is usually unnoticeable however when light 
         interacts with an incredibly massive object or objects such as a galaxy or a supermassive black hole the curvature is significantly more 
@@ -145,13 +145,13 @@
         been suggested that perhaps it is possible to measure gravitational microlensing with cosmic objects within our own galaxy via the use of
         dark matter (Paczyñski 1986). The problem we run into with this theory is that it is unclear whether this dark matter would in fact come from
         primordial black holes or whether it would be some other unknown object causing the gravitational field. 
-          </pre>
+      
       </p>
         <hr>
 <h3 id="Arguments against Primordial Black Holes">Arguments against Primordial Black Holes</h3>
-            <pre id="Arguments_against_Primordial_Black_Holes_InText"></pre>
-         <p class="ex1">
-       <pre>
+            <p id="Arguments_against_Primordial_Black_Holes_InText">
+         
+       
        There are several arguments against dark matter being comprised of primordial black holes and there are numerous other suggestions as to what dark 
        matter could be made up of. One constraint of primordial black holes is the discovery of a 511keV gamma ray of positrons detected in the centre of 
        the galaxy as currently we do not know what the source of these positrons are, but a gamma ray of this energy level couldn’t be produced by a primordial
@@ -164,20 +164,20 @@
     <img src="Gravitational lensing.jpg" alt="Hole" width="451" height="263">
         Figure 2: <i> A galaxy being gravitationally lensed. (Hubble Telescope 2020) </i>
     
-  </pre>
+  
        </p>
          <hr>
 <h3 id="Conclusion">Conclusion</h3>
-           <pre id="Conclusion_InText"></pre>
-         <p class="ex1">
-    <pre>
+           <p id="Conclusion_InText">
+         
+   
       This paper explored the theory that dark matter could potentially be comprised of primordial black holes. After reading through numerous papers for and 
       against the proposition that dark matter is made of black holes, I believe that there is not enough counter evidence to completely rule out the possibility 
       that primordial black holes are what make up dark matter. However, the case of what makes up dark matter is a special one in the world of science as it’s 
       such a large open-ended question with so little evidence for any one theory. It is for this reason that I have concluded that all the prominent theories as
       to what could make up dark matter are equally valid and should be investigated just as much as the black hole theory. The total lack of evidence means we
       should test as many theories as possible to give the greatest possible chance that we one day make progress in discovering what truly makes up dark matter.
-           </pre>
+           
        </p>
          <hr>
             <h3 id="References">References</h3>
@@ -274,10 +274,12 @@
   function displayWordCount(sectionId, outputId) {
     // Get the text content from the specified section
     const text = document.getElementById(sectionId).textContent;
+    //console.log(text);
     // Split text into words based on spaces and filter out any empty strings
     const wordArray = text.trim().split(/\s+/);
     // Count the words
     const wordCount = wordArray.length;
+    
     // Return the word count for summing purposes
     return wordCount;
   }
